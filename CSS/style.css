@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+@keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
 
 body {
     display: flex;
@@ -11,6 +11,7 @@ body {
 main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     height: 2000px;
     width: 40%;
 }
@@ -75,12 +76,12 @@ ul {
 }
 
 #theme:hover {
-    filter: saturate(200%)
+    filter: saturate(200%);
 }
 
 #theme:active {
     filter: saturate(300%)
-    opacity(0.8)
+    opacity(0.8);
 }
 /*CORPO*/
 
@@ -96,6 +97,7 @@ ul {
 
 #mensage {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation:bounce-top .9s both;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +130,7 @@ ul {
     border: 1px solid white;
     box-shadow: 3px 3px 3px rgba(34, 33, 33, 0.767);
 }
+
 .perfil h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
@@ -152,4 +155,8 @@ ul {
     width: 90px;
     background-color: #9e9d9ddc;
     border-radius: 5px;
+}
+
+.teste {
+    background-color: bisque;
 }

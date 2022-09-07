@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3; main.html">
+    <title>Apresentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0);opacity:1}}
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 800px;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            background-image: linear-gradient(to right, rgb(237, 237, 237), rgb(203, 198, 198));
+            animation:tracking-in-expand-fwd 2.4s cubic-bezier(.215,.61,.355,1.000) both;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            animation:tracking-in-expand-fwd 2.4s cubic-bezier(.215,.61,.355,1.000) both;
+            font-size: 120px;
+            margin-top: -1rem;
+            transition-delay: 1s;
+        }
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            animation:tracking-in-expand-fwd 2.4s cubic-bezier(.215,.61,.355,1.000) both;
+            margin-top: -7rem;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Portfólio</h1>
+        <h2>Leonardo Fagundes</h2>
+    </section>
+</body>
+</html>
