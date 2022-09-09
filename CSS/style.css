@@ -12,7 +12,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 2000px;
+    height: 1500px;
     width: 40%;
 }
 
@@ -20,6 +20,7 @@ main {
 
 nav {
     display: flex;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -37,6 +38,10 @@ ul {
     justify-content: space-around;
     width: 30%;
     margin-left: -10rem;
+}
+
+div p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #icon {
@@ -99,6 +104,7 @@ ul {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation:bounce-top .9s both;
     display: flex;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     width: 485.5px;
@@ -144,19 +150,116 @@ ul {
     margin-top: -1rem;
 }
 
-#sobre h4 {
+h3 {
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
-.linha {
-    margin-top: -1.3rem;
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+.linha-about {
+    margin-top: -1.8rem;
     margin-left: -0.1rem;
     height: 5px;
-    width: 90px;
+    width: 110px;
     background-color: #9e9d9ddc;
     border-radius: 5px;
 }
 
 .teste {
     background-color: bisque;
+}
+
+#linkPortfolio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    width: 147.67px;
+    height: 40px;
+    background-color: #379795;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 1rem;
+}
+
+#linkPortfolio:hover {
+    transition-delay: 60ms;
+    filter: saturate(130%);
+}
+
+#linkPortfolio:active {
+    transition-delay: 60ms;
+    filter: saturate(200%)
+    opacity(0.8);
+}
+
+.linha-bio {
+    margin-top: -1.8rem;
+    margin-left: -0.1rem;
+    height: 5px;
+    width: 34px;
+    background-color: #9e9d9ddc;
+    border-radius: 5px;
+}
+
+.linha-social {
+    margin-top: -1.8rem;
+    margin-left: -0.1rem;
+    height: 5px;
+    width: 135px;
+    background-color: #9e9d9ddc;
+    border-radius: 5px;
+}
+
+.containerBio {
+    width: 100%;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+
+}
+
+.containerBio .bio:not(:first-child) {
+    margin-top: -1rem;
+}
+
+.bio h5 {
+    margin-right: 1rem;
+}
+
+.ilove {
+    width: 100%;
+}
+
+.redesSociais {
+    width: 100%;
+}
+
+.iconLink {
+    height: 40px;
+    width: 40px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0094bc;
+}
+
+.link img {
+    margin-right: 1.2rem;
+}
+
+.div-links {
+    margin-top: 1rem;
 }
