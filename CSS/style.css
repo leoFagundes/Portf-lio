@@ -271,6 +271,7 @@ h5 {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 180%;
+    margin-top: 40px;
 }
 
 .projeto {
