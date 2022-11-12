@@ -44,16 +44,18 @@ div p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.ul-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+}
+
 #icon {
     margin-right: 0.3rem;
 }
 
 #iconGit {
     margin-right: 0.2rem;
-}
-
-.container {
-    margin-top: 50px;
 }
 
 .git {
@@ -91,6 +93,8 @@ div p {
 /*CORPO*/
 
 .container {
+    min-width: 200px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,6 +126,7 @@ div p {
 .perfil {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -271,7 +276,7 @@ h5 {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 180%;
-    margin-top: 40px;
+    height: auto;
 }
 
 .projeto {
@@ -282,14 +287,15 @@ h5 {
     height: 300px;
     width: 20vw;
     margin-bottom: 4px;
+    min-width: 240px;
 }
 
 .imagem_projeto {
-    height: 32vh;
+    height: 210px;
     width: 20vw;
     object-fit: cover;
     border-radius: 25px;
-
+    min-width: 240px;
     box-shadow:
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
