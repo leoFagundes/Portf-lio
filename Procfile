@@ -1,1 +1,1 @@
-web: gunicorn index.html:app
+web: gunicorn main.html:app
